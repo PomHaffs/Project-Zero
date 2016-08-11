@@ -18,7 +18,6 @@ final.play();
 var randomAudio = function() {
 	var randomNumber = Math.floor(Math.random()*(audioFiles.length));
 	audioFiles[randomNumber].play();
-	var backUp = audioFiles.slice[randomNumber];
 	//audioFiles.pop(audioFiles[randomNumber]); slice
 };
 
@@ -54,6 +53,32 @@ new Audio("audio/OXY.m4a"),
 new Audio("audio/HOME.m4a"),
 new Audio("audio/GOOD.m4a")
 ];
+
+var audioFilesBack = [
+new Audio("audio/BOLD.m4a"),
+new Audio("audio/CAR.m4a"),
+new Audio("audio/DANCE.m4a"),
+new Audio("audio/DOG.m4a"),
+new Audio("audio/HUMAN.m4a"),
+new Audio("audio/ITS.m4a"),
+new Audio("audio/LEGS.m4a"),
+new Audio("audio/LOVELY.m4a"),
+new Audio("audio/PAY.m4a"),
+new Audio("audio/SENTANCE.m4a"),
+new Audio("audio/SHAVE.m4a"),
+new Audio("audio/WHERE.m4a"),
+new Audio("audio/BITE.m4a"),
+new Audio("audio/FUCK.m4a"),
+new Audio("audio/HAIRY.m4a"),
+new Audio("audio/LAD.m4a"),
+new Audio("audio/LADDER.m4a"),
+new Audio("audio/NIPPLES.m4a"),
+new Audio("audio/OXY.m4a"),
+new Audio("audio/HOME.m4a"),
+new Audio("audio/GOOD.m4a")
+];
+
+
 
 
 $("document").ready(function(){
