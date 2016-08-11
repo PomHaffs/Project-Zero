@@ -9,6 +9,7 @@ backgroundAudio.volume = 0.2;
 var clapAudio = new Audio("audio/clap.mp3");
 clapAudio.volume = 0.2;
 
+var noClick = false;
 
 window.setTimeout(function() {
 final.play();
@@ -22,13 +23,13 @@ var randomAudio = function() {
 };
 
 var final = new Audio("audio/Final.m4a");
-var badgerIntro = new Audio("audio/Badgerintro.m4a");
+var badgerIntro = new Audio("audio/BadgerIntro.m4a");
 var wolfIntro = new Audio("audio/WolfIntro.m4a");
 var bWin = new Audio("audio/BWin.m4a");
 var wWin = new Audio("audio/WWin.m4a");
-var panda = new Audio("audio/PANDA.mp4");
+var panda = new Audio("audio/PANDA.m4a");
 var winner = new Audio("audio/WINNER.m4a");
-var boo = new Audio("audio/boo.mp3");
+var boo = new Audio("audio/Boo.mp3");
 
 var audioFiles = [
 new Audio("audio/BOLD.m4a"),
@@ -53,33 +54,6 @@ new Audio("audio/OXY.m4a"),
 new Audio("audio/HOME.m4a"),
 new Audio("audio/GOOD.m4a")
 ];
-
-var audioFilesBack = [
-new Audio("audio/BOLD.m4a"),
-new Audio("audio/CAR.m4a"),
-new Audio("audio/DANCE.m4a"),
-new Audio("audio/DOG.m4a"),
-new Audio("audio/HUMAN.m4a"),
-new Audio("audio/ITS.m4a"),
-new Audio("audio/LEGS.m4a"),
-new Audio("audio/LOVELY.m4a"),
-new Audio("audio/PAY.m4a"),
-new Audio("audio/SENTANCE.m4a"),
-new Audio("audio/SHAVE.m4a"),
-new Audio("audio/WHERE.m4a"),
-new Audio("audio/BITE.m4a"),
-new Audio("audio/FUCK.m4a"),
-new Audio("audio/HAIRY.m4a"),
-new Audio("audio/LAD.m4a"),
-new Audio("audio/LADDER.m4a"),
-new Audio("audio/NIPPLES.m4a"),
-new Audio("audio/OXY.m4a"),
-new Audio("audio/HOME.m4a"),
-new Audio("audio/GOOD.m4a")
-];
-
-
-
 
 $("document").ready(function(){
 //self populating arrays for players
