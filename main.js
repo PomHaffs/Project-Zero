@@ -9,7 +9,24 @@ backgroundAudio.volume = 0.2;
 var clapAudio = new Audio("audio/clap.mp3");
 clapAudio.volume = 0.2;
 
-var noClick = false;
+window.setTimeout(function() {
+swal({
+  title: 'Badger!',
+  text: 'One to watch.',
+  imageUrl: 'Badger.png',
+  imageWidth: 400,
+  imageHeight: 400,
+  timer: 16000,
+}); badgerIntro.play();}, 8000);
+
+window.setTimeout(function() {
+swal({
+  title: 'Wolf!',
+  text: 'Certainly means business.',
+  imageUrl: 'Wolf.png',
+  imageWidth: 400,
+  imageHeight: 400,
+}); wolfIntro.play();}, 25000);
 
 window.setTimeout(function() {
 final.play();
@@ -156,7 +173,7 @@ var roundOver = function(player) {
 //badger win message - limit of sweetAlert
 var winnerMessage1 = function (){
 		swal({   title: "Win",
-		text: "Battered by Badger!",
+		text: "Badgered by Badger if you will...",
 		imageUrl: "Badger.png",
 		showConfirmButton: true,
 		confirmButtonText: "Next round?",
@@ -168,7 +185,7 @@ var winnerMessage1 = function (){
 //wolf win message - limit of sweetAlerts
 var winnerMessage2 = function (){
 		swal({   title: "Win",
-		text: "A win for the Wolf!",
+		text: "Keeping the wolf from the door, so to speak...",
 		imageUrl: "Wolf.png",
 		showConfirmButton: true,
 		confirmButtonText: "Next round?",
