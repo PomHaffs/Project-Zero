@@ -4,12 +4,11 @@ console.log("Tic tat noooooooo!");
 var backgroundAudio = new Audio("audio/forest.mp3");
 backgroundAudio.play();
 backgroundAudio.loop = true;
-backgroundAudio.volume = 0.4;
+backgroundAudio.volume = 0.2;
 
 var clapAudio = new Audio("audio/clap.mp3");
-clapAudio.volume = 0.3;
+clapAudio.volume = 0.2;
 
-var boo = new Audio("audio/boo.mp3");
 
 window.setTimeout(function() {
 final.play();
@@ -18,10 +17,9 @@ final.play();
 //random no for audio selection
 var randomAudio = function() {
 	var randomNumber = Math.floor(Math.random()*(audioFiles.length));
-	audioFiles[randomNumer].play();
-	audioFiles.pop(audioFiles[randomNumber]);
-	// Then remove the element associated with that index
-	// Then play the track that was found
+	audioFiles[randomNumber].play();
+	var backUp = audioFiles.slice[randomNumber];
+	//audioFiles.pop(audioFiles[randomNumber]); slice
 };
 
 var final = new Audio("audio/Final.m4a");
@@ -31,6 +29,7 @@ var bWin = new Audio("audio/BWin.m4a");
 var wWin = new Audio("audio/WWin.m4a");
 var panda = new Audio("audio/PANDA.mp4");
 var winner = new Audio("audio/WINNER.m4a");
+var boo = new Audio("audio/boo.mp3");
 
 var audioFiles = [
 new Audio("audio/BOLD.m4a"),
@@ -93,9 +92,7 @@ $(".cell").on("click", function(event) {
 		var positionInArray = $(this).data("position");
 		var value = $(this).data("value");
 		player[positionInArray] = value;
-		// var randomAudio = randomAudio();
-		// var audio = audioFiles[randomAudio];
-		// audio.play();
+			}
 			if (noOfMoves % 2 === 0) {
 				$(this).addClass('badger animated zoomIn');
 			}
@@ -106,7 +103,7 @@ $(".cell").on("click", function(event) {
 				return false;
 		}
 	}
-});
+);
 //reset round - done
 var resetRound = function(){
 	noOfMoves = 1;
@@ -208,6 +205,7 @@ var checkWinner = function(){
 			roundOver();
 			return true;
 	}
+randomAudio();
 };
 //end messages
 var endGame = function(){
