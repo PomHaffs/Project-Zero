@@ -208,7 +208,7 @@ var winnerMessage2 = function (){
 //draw message - limit of sweetAlert
 var drawMessage = function (){
 		swal({   title: "A Draw?!",
-		text: "The Panda of despire!",
+		text: "The Panda of despair!",
 		imageUrl: "Red.png",
 		showConfirmButton: true});
 		window.setTimeout(function() {
